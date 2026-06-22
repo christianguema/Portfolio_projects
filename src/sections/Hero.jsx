@@ -1,15 +1,16 @@
 import { Link } from "react-router";
 import TextType from "@/components/ui/TextType";
-import PixelBlast from "@/components/ui/PixelBlast";
+//import PixelBlast from "@/components/ui/PixelBlast";
+import LightRays from "@/components/ui/LightRays";
 
 export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] flex flex-col justify-center px-6 max-w-6xl mx-auto overflow-hidden"
+      className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <PixelBlast
+        {/* <PixelBlast
           variant="square"
           pixelSize={4}
           color="#64FF5C"
@@ -27,10 +28,25 @@ export function Hero() {
           speed={0.5}
           edgeFade={0.25}
           transparent
+        /> */}
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#64FF5C"
+          raysSpeed={1}
+          lightSpread={0.5}
+          rayLength={3}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0}
+          distortion={0}
+          className="custom-rays"
+          pulsating
+          fadeDistance={1}
+          saturation={1}
         />
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
         <TextType
           className="font-mono text-accent-1 text-sm mb-4"
           text={["</> portfolio.dev"]}

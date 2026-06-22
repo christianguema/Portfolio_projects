@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FiSun, FiMoon } from "react-icons/fi";
+import { useTheme } from "@/hooks/useTheme";
 
 const navLinks = [
   { label: "Accueil", to: "/", type: "route" },
@@ -15,6 +17,7 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const {theme, toggleTheme} = useTheme()
 
   const handleAnchorClick = (e, to) => {
     e.preventDefault();
@@ -66,13 +69,23 @@ export function Navbar() {
           )}
         </ul>
 
-        <button
-          className="md:hidden text-text text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Menu"
-        >
-          {isOpen ? <HiX /> : <HiMenu />}
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={toggleTheme}
+            aria-label="Changer de thème"
+            className="w-9 h-9 flex items-center justify-center rounded-full border border-accent-1/20 text-accent-1 hover:border-accent-1 transition-colors duration-200 cursor-pointer"
+          >
+            {theme === "dark" ? <FiSun /> : <FiMoon />}
+          </button>
+
+          <button
+            className="md:hidden text-text text-2xl cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Menu"
+          >
+            {isOpen ? <HiX /> : <HiMenu />}
+          </button>
+        </div>
       </nav>
 
       {isOpen && (
