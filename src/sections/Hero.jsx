@@ -1,13 +1,13 @@
 import { Link } from "react-router";
 import TextType from "@/components/ui/TextType";
-//import PixelBlast from "@/components/ui/PixelBlast";
 import LightRays from "@/components/ui/LightRays";
+import LetterGlitch from "@/components/ui/LetterGlitch";
 
 export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         {/* <PixelBlast
@@ -44,6 +44,16 @@ export function Hero() {
           fadeDistance={1}
           saturation={1}
         />
+        {/* <LetterGlitch
+          glitchSpeed={100}
+          centerVignette={true}
+          outerVignette={false}
+          smooth
+          speed={10}
+          colors={["#FFA759", "#64FF5C", "#F4F1EE"]}
+          showCenterVignette
+          showOuterVignette={false}
+        /> */}
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">

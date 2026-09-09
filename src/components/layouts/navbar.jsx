@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { FiSun, FiMoon } from "react-icons/fi";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@/context/ThemeContext";
 
 const navLinks = [
   { label: "Accueil", to: "/", type: "route" },

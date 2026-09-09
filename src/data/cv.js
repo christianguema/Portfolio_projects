@@ -1,18 +1,29 @@
 export const cvData = {
   identity: {
-    name: "Ton Nom",
+    name: "GUEMA Christian",
     title: "Développeur Fullstack",
     location: "Lomé, Togo",
-    email: "toi@example.com",
-    phone: "+228 00 00 00 00",
+    email: "christian.guema@ifnti.com",
+    phone: "+228 91 89 27 92",
   },
   summary:
-    "Développeur fullstack passionné, je construis des expériences web modernes, performantes et créatives, avec une attention particulière portée aux détails techniques et visuels.",
+    "Développeur fullstack passionné, je construis des solutions et applications web modernes, performantes et créatives, avec une attention particulière portée aux détails techniques et visuels selon les besoins.",
   experience: [
     {
+      role: "Développeur Fullskack",
+      company: "Dans le cadre de la compétion du Best-Programmer edition 2026",
+      period: "2025 — 2026",
+      tasks: [
+        "Conception d'interfaces utilisateur réactives et performantes",
+        "Devellopement d'un application mobile avec flutter",
+        "Conception d'une application desktop avec ElectronJS",
+        "Intégration d'API REST",
+      ],
+    },
+    {
       role: "Développeur Fullstack",
-      company: "Nom de l'entreprise",
-      period: "2023 — Présent",
+      company: "ODDA TECHNOLOGY",
+      period: "2024 — 2025",
       tasks: [
         "Développement et maintenance d'applications web full stack",
         "Collaboration avec les équipes produit et design",
@@ -20,23 +31,24 @@ export const cvData = {
       ],
     },
     {
-      role: "Développeur Frontend",
-      company: "Nom de l'entreprise précédente",
-      period: "2021 — 2023",
+      role: "Développeur Fullstack",
+      company: "Etablissement la Gloire",
+      period: "2022 — 2023",
       tasks: [
-        "Conception d'interfaces utilisateur réactives et performantes",
+        "Comceprion de l'interface utilisateur complet",
         "Intégration d'API REST",
       ],
     },
+    
   ],
   education: [
     {
-      degree: "Formation en développement web",
-      school: "Nom de l'école / organisme",
-      period: "2020 — 2021",
+      degree: "Licence professionnel- En Genie logicel et numerique",
+      school: "IFNTI (Institut de Formation aux Normes et Technologie de l'Informatique)",
+      period: "2022 — 2026",
     },
   ],
-  skills: ["React", "Node.js", "JavaScript", "TypeScript", "Tailwind CSS", "MongoDB", "Git"],
+  skills: ["React", "Node.js", "JavaScript", "TypeScript","Flutter" ,"Tailwind CSS", "Postrgresql", "Git", "etc..."],
   languages: [
     { name: "Français", level: "Langue maternelle" },
     { name: "Anglais", level: "Courant" },

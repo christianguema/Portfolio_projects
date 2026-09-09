@@ -6,11 +6,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-bg: #0A1A11;
-  --color-surface: #132B16;
-  --color-accent-1: #64FF5C;
-  --color-accent-2: #FFA759;
-  --color-text: #F4F1EE;
+  --color-bg: #F4F1EE;
+  --color-surface: #FFFFFF;
+  --color-accent-1: #167C3A;
+  --color-accent-2: #C45F1D;
+  --color-text: #132B16;
 
   --font-display: "Audiowide", sans-serif;
   --font-body: "Sora", sans-serif;

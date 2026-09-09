@@ -6,7 +6,7 @@ const socialLinks = [
   { label: "GitHub", href: "https://github.com/ton-username", icon: FaGithub },
   { label: "LinkedIn", href: "https://linkedin.com/in/ton-username", icon: FaLinkedin },
   { label: "Twitter", href: "https://twitter.com/ton-username", icon: FaTwitter },
-  { label: "Email", href: "mailto:toi@example.com", icon: HiOutlineMail },
+  { label: "Email", href: "christian.guema@ifnti.com", icon: HiOutlineMail },
 ];
 
 const quickLinks = [
